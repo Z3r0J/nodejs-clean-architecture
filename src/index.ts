@@ -9,3 +9,5 @@ const main = async () => {
     }
   } catch (error) {}
 };
+
+main();
