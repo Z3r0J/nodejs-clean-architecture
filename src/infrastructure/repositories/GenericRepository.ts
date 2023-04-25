@@ -1,9 +1,12 @@
 import { EntityTarget, FindOptionsWhere, Repository } from "typeorm";
 import { BaseEntity } from "../../domain/entities/BaseEntity";
 import { AppDataSource } from "../typeorm.config";
+import { IGenericRepository } from "../../application/interfaces/repositories/IGenericRepository";
 
-export abstract class GenericRepository<T extends BaseEntity> {
-  public repository: Repository<T>;
+export abstract class GenericRepository<T extends BaseEntity>
+  implements IGenericRepository<T>
+{
+  protected repository: Repository<T>;
   protected abstract Entity: EntityTarget<T>;
 
   constructor() {
