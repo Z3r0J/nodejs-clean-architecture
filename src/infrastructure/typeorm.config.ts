@@ -5,9 +5,9 @@ import { Test } from "../domain/entities/Test";
 export const AppDataSource = new DataSource({
   type: "mysql",
   host: "localhost",
-  port: 3306,
-  username: "test",
-  password: "test",
+  port: 3308,
+  username: "root",
+  password: "Jeanp",
   database: "test",
   synchronize: true,
   logging: false,
