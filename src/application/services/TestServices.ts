@@ -1,7 +1,7 @@
 import { Test } from "@entities/Test";
-import { ITestRepository } from "../interfaces/repositories/ITestRepository";
-import { ITestServices } from "../interfaces/services/ITestServices";
-import { GenericServices } from "./GenericServices";
+import { ITestRepository } from "@interfaces/repositories/ITestRepository";
+import { ITestServices } from "@interfaces/services/ITestServices";
+import { GenericServices } from "@services/GenericServices";
 
 export class TestServices
   extends GenericServices<Test>
