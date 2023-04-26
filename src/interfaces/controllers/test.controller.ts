@@ -5,6 +5,7 @@ import { TestRepository } from "../../infrastructure/repositories/TestRepository
 import { NotFoundError } from "../../error-handling/NotFoundError";
 import { CreateTestDTO } from "../../application/dtos/createTestDTO";
 import { validate } from "class-validator";
+import { Test } from "../../domain/entities/Test";
 
 export class TestController {
   private readonly _testServices: ITestServices = new TestServices(
@@ -56,7 +57,7 @@ export class TestController {
         );
       }
 
-      const response = await this._testServices.Create(req.body);
+      const response = await this._testServices.Create(new Test(req.body));
       return res.status(201).json(response);
     } catch (error) {
       next(error);
@@ -80,7 +81,10 @@ export class TestController {
         );
       }
 
-      const response = await this._testServices.Update(parseInt(id), req.body);
+      const response = await this._testServices.Update(
+        parseInt(id),
+        new Test(req.body)
+      );
 
       if (!response) {
         throw new NotFoundError("No data found");
