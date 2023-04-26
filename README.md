@@ -10,7 +10,7 @@ This is a starter project for building Node.js applications using clean architec
 
 - Nodejs 16.x or later
 - npm or yarn
-- mysql, mariadb, postgres, sqlite, mssql, oracle
+- your prefer database: mysql, mariadb, postgres, sqlite, mssql, oracle
 
 ### Installation
 
