@@ -1,7 +1,7 @@
 import { EntityTarget } from "typeorm";
-import { Test } from "../../domain/entities/Test";
-import { GenericRepository } from "./GenericRepository";
-import { ITestRepository } from "../../application/interfaces/repositories/ITestRepository";
+import { Test } from "@entities/Test";
+import { GenericRepository } from "@repositories/GenericRepository";
+import { ITestRepository } from "@interfaces/repositories/ITestRepository";
 
 export class TestRepository
   extends GenericRepository<Test>

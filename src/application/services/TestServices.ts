@@ -1,4 +1,4 @@
-import { Test } from "../../domain/entities/Test";
+import { Test } from "@entities/Test";
 import { ITestRepository } from "../interfaces/repositories/ITestRepository";
 import { ITestServices } from "../interfaces/services/ITestServices";
 import { GenericServices } from "./GenericServices";

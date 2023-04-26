@@ -1,7 +1,7 @@
 import { Express } from "express";
 import * as bodyParser from "body-parser";
-import { testRoute } from "../interfaces/routes/test.route";
-import { ErrorHandler } from "../interfaces/middlewares/error.handler.middleware";
+import { testRoute } from "@routes/test.route";
+import { ErrorHandler } from "@middlewares/error.handler.middleware";
 import * as cors from "cors";
 
 export class ExpressConfig {

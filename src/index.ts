@@ -1,5 +1,5 @@
-import { AppDataSource } from "./infrastructure/typeorm.config";
-import { ExpressConfig } from "./config/express.config";
+import { AppDataSource } from "@typeorm-config";
+import { ExpressConfig } from "@express-config";
 import * as express from "express";
 import { config } from "dotenv";
 

@@ -1,4 +1,4 @@
-import { BaseEntity } from "../../domain/entities/BaseEntity";
+import { BaseEntity } from "@entities/BaseEntity";
 import { IGenericRepository } from "../interfaces/repositories/IGenericRepository";
 import { IGenericServices } from "../interfaces/services/IGenericServices";
 

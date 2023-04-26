@@ -1,4 +1,4 @@
-import { Test } from "../../../domain/entities/Test";
+import { Test } from "../@entities/Test";
 import { IGenericRepository } from "./IGenericRepository";
 
 export interface ITestRepository extends IGenericRepository<Test> {

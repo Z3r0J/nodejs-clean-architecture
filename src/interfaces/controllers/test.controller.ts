@@ -1,11 +1,11 @@
 import { NextFunction, Request, Response } from "express";
-import { ITestServices } from "../../application/interfaces/services/ITestServices";
-import { TestServices } from "../../application/services/TestServices";
-import { TestRepository } from "../../infrastructure/repositories/TestRepository";
-import { NotFoundError } from "../../error-handling/NotFoundError";
-import { CreateTestDTO } from "../../application/dtos/createTestDTO";
+import { ITestServices } from "@interfaces/services/ITestServices";
+import { TestServices } from "@services/TestServices";
+import { TestRepository } from "@repositories/TestRepository";
+import { NotFoundError } from "@error-custom//NotFoundError";
+import { CreateTestDTO } from "@dtos/createTestDTO";
 import { validate } from "class-validator";
-import { Test } from "../../domain/entities/Test";
+import { Test } from "@entities/Test";
 
 export class TestController {
   private readonly _testServices: ITestServices = new TestServices(

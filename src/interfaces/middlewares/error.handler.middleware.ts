@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
-import { CustomError } from "../../error-handling/CustomError";
-import { NotFoundError } from "../../error-handling/NotFoundError";
-import { BadRequestError } from "../../error-handling/BadRequestError";
+import { CustomError } from "@error-custom//CustomError";
+import { NotFoundError } from "@error-custom//NotFoundError";
+import { BadRequestError } from "@error-custom//BadRequestError";
 
 export const ErrorHandler = (
   err: Error,
