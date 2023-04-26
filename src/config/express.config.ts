@@ -2,10 +2,11 @@ import { Express } from "express";
 import * as bodyParser from "body-parser";
 import { testRoute } from "../interfaces/routes/test.route";
 import { ErrorHandler } from "../interfaces/middlewares/error.handler.middleware";
+import * as cors from "cors";
 
 export class ExpressConfig {
   private app: Express;
-  private port = process.env.PORT || 3000;
+  private port = Number(process.env.PORT) || 3000;
 
   constructor(express: Express) {
     this.app = express;
@@ -15,6 +16,7 @@ export class ExpressConfig {
     try {
       this.app.use(bodyParser.json());
       this.app.use(bodyParser.urlencoded({ extended: false }));
+      this.app.use(cors());
       this.app.use(testRoute);
       this.app.use(ErrorHandler);
       this.app.listen(this.port, () => {
