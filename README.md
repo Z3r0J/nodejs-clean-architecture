@@ -4,7 +4,7 @@ This is a starter project for building Node.js applications using clean architec
 
 ## Getting Started
 
-#
+
 
 ### Prerequisites
 
@@ -35,7 +35,7 @@ This is a starter project for building Node.js applications using clean architec
 
 ## Usage
 
-#
+
 
 1. Start Application
 
@@ -47,7 +47,7 @@ This is a starter project for building Node.js applications using clean architec
 
 ### Project structure
 
-#
+
 
 ```bash
 .
@@ -70,10 +70,10 @@ This is a starter project for building Node.js applications using clean architec
 |   |   |--routes/     #
 ```
 
-### This project was made with TypeORM and Express to get done the clean architecture with NodeJs
+##### This project was made with TypeORM and Express to get done the clean architecture with NodeJs
 
 &nbsp;
 &nbsp;
 &nbsp;
 
-#### Made with ❤ by Jean Carlos Reyes
+##### Made with ❤ by Jean Carlos Reyes
