@@ -1,16 +1,12 @@
 import { NextFunction, Request, Response } from "express";
 import { ITestServices } from "@interfaces/services/ITestServices";
-import { TestServices } from "@services/TestServices";
-import { TestRepository } from "@repositories/TestRepository";
 import { NotFoundError } from "@error-custom//NotFoundError";
 import { CreateTestDTO } from "@dtos/createTestDTO";
 import { validate } from "class-validator";
 import { Test } from "@entities/Test";
 
 export class TestController {
-  private readonly _testServices: ITestServices = new TestServices(
-    new TestRepository()
-  );
+  constructor(private _testServices: ITestServices) {}
 
   getAll = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -22,7 +18,7 @@ export class TestController {
 
       return res.status(200).json(response);
     } catch (error) {
-      next(error);
+      return next(error);
     }
   };
 
@@ -37,7 +33,7 @@ export class TestController {
 
       return res.status(200).json(response);
     } catch (error) {
-      next(error);
+      return next(error);
     }
   };
 
@@ -60,7 +56,7 @@ export class TestController {
       const response = await this._testServices.Create(new Test(req.body));
       return res.status(201).json(response);
     } catch (error) {
-      next(error);
+      return next(error);
     }
   };
 
@@ -92,7 +88,7 @@ export class TestController {
 
       return res.status(200).json(response);
     } catch (error) {
-      next(error);
+      return next(error);
     }
   };
 }

@@ -22,6 +22,8 @@ export class ExpressConfig {
       this.app.listen(this.port, () => {
         console.log(`Server is running on port ${this.port}`);
       });
-    } catch (error) {}
+    } catch (error) {
+      console.error(error);
+    }
   }
 }

@@ -7,10 +7,8 @@ export class TestRepository
   extends GenericRepository<Test>
   implements ITestRepository
 {
-  protected Entity: EntityTarget<Test>;
-
   constructor() {
-    TestRepository.prototype.Entity = Test;
-    super();
+    const Entity = Test;
+    super(Entity);
   }
 }

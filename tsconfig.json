@@ -25,6 +25,10 @@
     "experimentalDecorators": true,
     "isolatedModules": true,
     "sourceMap": true,
-    "esModuleInterop": false
+    "esModuleInterop": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
