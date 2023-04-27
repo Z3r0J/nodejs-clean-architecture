@@ -1,10 +1,8 @@
 # Awesome Project to get started with Clean Architecture (NodeJs)
 
 <div style="display:flex; justify-content:space-between;">
-<img src="https://th.bing.com/th/id/R.4dfe01148ebce3a9de8ab55279b0b4bc?rik=Cb%2f46GSGyzIMJA&pid=ImgRaw&r=0" width="150" height="90">
-<h2 style="justify-content:center;">+</h2>
-<img src="https://adityasingh.gallerycdn.vsassets.io/extensions/adityasingh/expressjs-snippets/0.0.1/1639291392716/Microsoft.VisualStudio.Services.Icons.Default" width="150"/>
-<h2 style="justify-content:center;">+</h2>
+<img src="https://th.bing.com/th/id/R.4dfe01148ebce3a9de8ab55279b0b4bc?rik=Cb%2f46GSGyzIMJA&pid=ImgRaw&r=0" width="150" height="90"> <span>+</span>
+<img src="https://adityasingh.gallerycdn.vsassets.io/extensions/adityasingh/expressjs-snippets/0.0.1/1639291392716/Microsoft.VisualStudio.Services.Icons.Default" width="150"/><span>+</span>
 <img src="https://user-images.githubusercontent.com/30929568/112730670-de09a480-8f58-11eb-9875-0d9ebb87fbd6.png" width="200" height="90">
 </div>
 <br/>
